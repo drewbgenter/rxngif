@@ -1,0 +1,11 @@
+<h1>Picture Index</h1>
+
+
+<% @allpictures.each do |picture| %>
+    <div>
+        <img src="<%= picture.source %>">
+    </div>
+    <div>
+      <p><%= picture.caption %></p>
+    </div>
+<% end %>
