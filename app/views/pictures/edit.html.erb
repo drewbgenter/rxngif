@@ -1,6 +1,6 @@
 <h1>Edit Picture</h1>
 
-<form action="http://localhost:3000/update_picture/">
+<form action="http://localhost:3000/update_picture/<%= @p.id %>">
   <div>
     <label for="caption">Caption:</label>
     <input value="<%= @p.caption %>" id="caption" type="text" name="caption">
