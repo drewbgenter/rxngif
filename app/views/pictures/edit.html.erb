@@ -1,15 +1,15 @@
 <h1>Edit Picture</h1>
 
-<form action="http://localhost:3000/update_picture/<%= params[:id] %>">
+<form action="http://localhost:3000/update_picture/">
   <div>
     <label for="caption">Caption:</label>
-    <input id="caption" type="text" name="caption">
+    <input value="<%= @p.caption %>" id="caption" type="text" name="caption">
   </div>
   <div>
     <label for="source">Image URL:</label>
-    <input id="source" type="text" name="source">
+    <input value="<%= @p.source %>" id="source" type="text" name="source">
   </div>
   <div>
-    <input type="submit" value="Create Picture">
+    <input type="submit" value="Edit Picture">
   </div>
 </form>
