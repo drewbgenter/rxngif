@@ -37,7 +37,7 @@ class PicturesController < ApplicationController
     @p.source = params[:source]
     @p.save
     @id = @p.id.to_s
-    @redirect = "http://localhost:3000//picture_details/" + @id
+    @redirect = "http://localhost:3000/picture_details/" + @id
 
     redirect_to(@redirect)
   end
